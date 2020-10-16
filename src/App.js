@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { PageTransition } from '@steveeeie/react-page-transition';
+
+import Navigation from './components/Navigation';
+import Home from './components/Home';
+import Menu from './components/Menu';
+import Contact from './components/Contact';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+    render() {
+        return (
+            <BrowserRouter>
+              <Navigation />
+              <Route
+                render={({ location }) => {
+                  return (
+                    <PageTransition
+                      preset="moveToLeftFromRight"
+                      transitionKey={location.pathname}
+                    >
+                      <Switch location={location}>
+                        <Route exact path="/" component={() => <Home />} />
+                        <Route exact path="/menu" component={() => <Menu />} />
+                        <Route exact path="/contact" component={() => <Contact />} />
+                      </Switch>
+                    </PageTransition>
+                  );
+                }}
+              />
+            </BrowserRouter>
+        );
+    }
 }
 
 export default App;

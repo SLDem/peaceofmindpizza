@@ -1,0 +1,26 @@
+.home-wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+.home {
+    width: 60%;
+    margin: 50px auto;
+}
+
+.header {
+
+}
+
+.header img {
+    width: 100%;
+}
+
+.bar {
+    height: 100px;
+}
