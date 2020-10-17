@@ -6,6 +6,7 @@ import Navigation from './components/Navigation';
 import Home from './components/Home';
 import Menu from './components/Menu';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 import './App.css';
 
@@ -30,6 +31,7 @@ class App extends Component {
                   );
                 }}
               />
+              <Footer />
             </BrowserRouter>
         );
     }

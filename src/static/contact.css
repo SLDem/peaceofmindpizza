@@ -17,6 +17,13 @@
     display: flex;
 }
 
+.chefs-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .chefs {
     display: flex;
     justify-content: center;

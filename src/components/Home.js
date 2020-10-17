@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import '../static/home.css'
+import '../static/home.css';
 import peaceofmind from '../images/peaceofmind.jpg';
-
+import Footer from './Footer';
 
 
 class Home extends Component {
@@ -14,7 +14,7 @@ class Home extends Component {
                     <div className="home">
                         <h1>Go to the Menu page to view our items or visit the contact page to call us and order a pizza or see where you can find us.</h1>
                     </div>
-                    <div className="bar"></div>
+                    <Footer />
                 </div>
             </div>
         )
