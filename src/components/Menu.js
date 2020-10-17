@@ -68,8 +68,6 @@ class Menu extends Component {
                             <p> We also offer a bunch of different salads for you to enjoy!</p>
                             <h3>5.00$ - 8.00$</h3>
                         </div>
-
-                        <div className="space"></div>
                     </div>
                     <Footer />
                 </div>
