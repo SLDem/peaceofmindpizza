@@ -79,3 +79,8 @@ h1 {
     width: 100%;
 }
 
+@media screen and (max-width: 1340px) {
+    .menu-items {
+        width: 90%;
+    }
+}

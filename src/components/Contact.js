@@ -47,7 +47,7 @@ class Contact extends Component {
                                 <div className="chef-info">
                                     <h2>Su-Chef Brian</h2>
                                     <br />
-                                    <p>Brian </p>
+                                    <p>Brian is great at making pizza. He has been with us since the start.</p>
                                     <br />
                                     <hr />
                                 </div>
@@ -55,7 +55,7 @@ class Contact extends Component {
                             <div className="phone">Years of experience: 10</div>
                         </div>
                     </div>
-                    <h2>Find us here:</h2>
+                    <h2 style={{ marginBottom: "50px" }}>Find us here:</h2>
                     <div className="maps">
                         <div className="map">
                             <img src={map1} alt="map1" />
@@ -72,7 +72,6 @@ class Contact extends Component {
                             <hr style={{width: "40%", margin: "0 auto"}} />
                         </div>
                     <Footer />
-
                 </div>
             </div>
         )

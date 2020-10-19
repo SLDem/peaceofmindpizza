@@ -58,3 +58,23 @@
     opacity: 1;
     transition: 0.2s ease;
 }
+
+@media screen and (max-width: 1340px) {
+    .images {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .main-nav {
+         padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main-nav span {
+        display: none;
+    }
+}

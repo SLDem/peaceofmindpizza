@@ -58,7 +58,6 @@
 h2 {
     color: #404040;
     text-align: center;
-    margin-bottom: 50px;
 }
 
 .maps {
@@ -75,4 +74,37 @@ h2 {
     height: 300px;
     width: 500px;
     border: 2px solid grey;
+}
+
+@media screen and (max-width: 1340px) {
+    .chefs-wrap {
+        width: 99%;
+    }
+
+    .maps {
+        width: 99%;
+        flex-wrap: wrap;
+    }
+
+    .map {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 473px) {
+    .chef {
+        width: 240px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 50px 50px 40px 40px
+    }
+    .general-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .general-info img {
+        border-radius: 5px;
+    }
 }

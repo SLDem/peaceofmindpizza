@@ -18,28 +18,27 @@ function Navigation(props) {
                     <NavLink exact to="/menu"><img className="logo-image" src={logo} alt="/logo" /></NavLink>
                 </div>
 
-                <div>
-                <ul className="main-nav">
-                    <li>
-                        <NavLink exact className="nav-link" activeClassName="current" to="/">
-                            <img height="40" width="40" src={homeLogo} alt="/" />
-                            Home
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink exact className="nav-link" activeClassName="current" to="/menu">
-                            <img height="40" width="40" src={menuLogo} alt="/" />
-                            Menu
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink exact className="nav-link" activeClassName="current" to="/contact">
-                            <img height="40" width="40" src={contactLogo} alt="/" />
-                            Contact
-                        </NavLink>
-                    </li>
-                </ul>
-                </div>
+                        <ul className="main-nav">
+                            <li>
+                                <NavLink exact className="nav-link" activeClassName="current" to="/">
+                                    <img height="35" width="35" src={homeLogo} alt="/" />
+                                    <span>Home</span>
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink exact className="nav-link" activeClassName="current" to="/menu">
+                                    <img height="35" width="35" src={menuLogo} alt="/" />
+                                    <span>Menu</span>
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink exact className="nav-link" activeClassName="current" to="/contact">
+                                    <img height="35" width="35" src={contactLogo} alt="/" />
+                                    <span>Contact</span>
+                                </NavLink>
+                            </li>
+                        </ul>
+
             </div>
         </div>
     );
